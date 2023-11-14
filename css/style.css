@@ -1,0 +1,81 @@
+:root{
+    /* paleta de culori */
+    --princiapl-inchis: rgba(126,146,91,255);
+    --princiapl-deschis: rgba(185,195,124,255);
+
+    --accent-portocaliu: rgba(252,187,107,255);
+    --accent-bej: rgba(236,229,175,255);
+    --accent-verde: rgba(234,247,219,255);
+
+    /* font */
+}
+
+html,body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+
+    color: var(--princiapl-inchis);
+}
+/* Navigare */
+
+#bara-navigare{
+    position: absolute;
+    right: 0;
+    transform: translateX( calc(100% - 1em - 40px));
+
+    width: fit-content;
+    height: 2em;
+
+    font-size: xx-large;
+    
+    display: grid;
+    align-items: center;
+    grid-auto-flow: column;
+
+    transition: 1s;
+}
+#bara-navigare :nth-child(n){
+    transition: 1s;
+    padding: 5px 20px 5px 20px;
+}
+#bara-navigare:hover{
+    transform: translateX(0);
+}
+#bara-navigare:hover :first-child{
+    font-size: 0;
+    transition: 0.4s;
+    transition-delay: 0.2s;
+}
+
+/* Pagina de intampinare */
+
+#pagina-intampinare{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+
+    background-image: url("../imagini/jbwallpaper1.jpg");
+    background-size: cover;
+}
+
+#div-titlu-int{
+    width: 100%;
+    height: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#div-titlu-int h1{
+    font-size: 8rem;
+}
+#div-butoane-int{
+    width: 100%;
+    height: 50%;
+}

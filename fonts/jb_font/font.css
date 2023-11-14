@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'JB-FONT';
+    src: url('jb_font.woff2') format('woff2'),
+         url('jb_font.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    font-family: JB-FONT;
+}
