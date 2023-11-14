@@ -9,6 +9,7 @@
 }
 
 html,body,#body{
+    /* marime pagine */
     height: 100%;
     margin: 0;
     padding: 0;
@@ -16,10 +17,11 @@ html,body,#body{
     color: var(--princiapl-inchis);
 }
 #body{
-    position: relative;
-
+    /* marime div */
     width: 100%;
-
+    /* elementele cu positie absolut vor fi pozititionate in functie de divul asta */
+    position: relative;
+    /* ascunde orice este mai mare decat divul asta pe axa x */
     overflow-x: hidden;
 }
 /* Navigare */
