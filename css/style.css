@@ -6,8 +6,6 @@
     --accent-portocaliu: rgba(252,187,107,255);
     --accent-bej: rgba(236,229,175,255);
     --accent-verde: rgba(234,247,219,255);
-
-    /* font */
 }
 
 html,body,#body{
@@ -16,7 +14,6 @@ html,body,#body{
     padding: 0;
 
     color: var(--princiapl-inchis);
-
 }
 #body{
     position: relative;
@@ -28,30 +25,37 @@ html,body,#body{
 /* Navigare */
 
 #bara-navigare{
+    /* pune bara de navigare in dreapta sus putin ascunsa */
     position: absolute;
+    top: 0;
     right: 0;
     transform: translateX( calc(100% - 1em - 40px));
-
+    /* marime bara de navigare */
     width: fit-content;
     height: 2em;
-
+    /* marime font */
     font-size: xx-large;
-    
+    /* felul in care afiseaza elementele din bara */
     display: grid;
     align-items: center;
     grid-auto-flow: column;
-
+    /* viteza cu care se animeaza bara */
     transition: 1s;
 }
 #bara-navigare :nth-child(n){
+    /* viteza cu care se animeaza elementele din bara */
     transition: 1s;
+    /* seteaza spatii intre elementele din bara */
     padding: 5px 20px 5px 20px;
 }
 #bara-navigare:hover{
+    /* arata bara cand ai mouse ul peste ea */
     transform: translateX(0);
 }
 #bara-navigare:hover :first-child{
+    /* marime font */
     font-size: 0;
+    /* adauga un delay pentru cand dispar cele 3 linii */
     transition: 0.4s;
     transition-delay: 0.2s;
 }
@@ -59,30 +63,29 @@ html,body,#body{
 /* Pagina de intampinare */
 
 #pagina-intampinare{
+    /* marime container */
     width: 100%;
     height: 100%;
-
+    /* aseaza elementele vertical */
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-
+    /* imagine de fundal setata sa incapa fix pe ecran */
     background-image: url("../imagini/jbwallpaper1.jpg");
     background-size: cover;
 }
-
 #div-titlu-int{
+    /* marime div */
     width: 100%;
     height: 50%;
-
+    /* aseaza elementele in centru */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 #div-titlu-int h1{
+    /* marime font si margini */
     font-size: 8rem;
-}
-#div-butoane-int{
-    width: 100%;
-    height: 50%;
+    margin: 0.67em;
 }
