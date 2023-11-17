@@ -6,6 +6,8 @@
     --accent-portocaliu: rgba(252,187,107,255);
     --accent-bej: rgba(236,229,175,255);
     --accent-verde: rgba(234,247,219,255);
+
+    /* font */
 }
 
 html,body,#body{
@@ -88,6 +90,37 @@ html,body,#body{
 }
 #div-titlu-int h1{
     /* marime font si margini */
-    font-size: 8rem;
-    margin: 0.67em;
+    font-size: clamp(8rem, 30vw, 17rem); 
+    /* font-size: 8rem; */
+    margin: 0;
+}
+#div-butoane-int{
+    width: 100%;
+    flex-grow: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buton-intampinare{
+    width: 200px;
+    height: 50px;
+    font-size: 40px;
+}
+
+/* elemente predefinite */
+button{
+    background-color: var(--princiapl-deschis);
+    border-radius: 10px;
+    transition: .6s;
+    border: 0;
+}
+button:hover{
+    background-color: var(--accent-portocaliu);
+}
+
+/* general */
+.pagina{
+    padding-top: 5rem;
+    box-sizing: border-box;
 }

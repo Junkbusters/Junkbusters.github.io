@@ -5,6 +5,9 @@
     font-weight: normal;
     font-style: normal;
 }
-body{
+h1{
     font-family: JB-FONT;
+}
+*{
+    font-family: verdana;
 }

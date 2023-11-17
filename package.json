@@ -1,0 +1,22 @@
+{
+  "name": "junkbusters",
+  "version": "1.0.0",
+  "description": "jb",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Junkbusters/Junkbusters.github.io.git"
+  },
+  "author": "Sia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Junkbusters/Junkbusters.github.io/issues"
+  },
+  "homepage": "https://github.com/Junkbusters/Junkbusters.github.io#readme",
+  "dependencies": {
+    "bootstrap": "^3.4.1"
+  }
+}
