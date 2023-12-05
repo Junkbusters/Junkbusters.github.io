@@ -56,7 +56,7 @@ html,body,#body{
     /* arata bara cand ai mouse ul peste ea */
     transform: translateX(0);
 }
-#bara-navigare:hover :first-child{
+#bara-navigare:hover #button-navigare{
     /* marime font */
     font-size: 0;
     /* adauga un delay pentru cand dispar cele 3 linii */
@@ -76,7 +76,7 @@ html,body,#body{
     align-items: center;
     flex-direction: column;
     /* imagine de fundal setata sa incapa fix pe ecran */
-    background-image: url("../imagini/jbwallpaper1.jpg");
+    background-image: url("../imagini/jbwallpaper4.jpg");
     background-size: cover;
 }
 #div-titlu-int{
@@ -104,9 +104,12 @@ html,body,#body{
 }
 .buton-intampinare{
     width: 200px;
-    height: 50px;
+    height: fit-content;
     font-size: 40px;
 }
+
+/* Pagina 404 */
+
 
 /* elemente predefinite */
 button{
@@ -117,6 +120,12 @@ button{
 }
 button:hover{
     background-color: var(--accent-portocaliu);
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
 }
 
 /* general */
