@@ -101,6 +101,7 @@ html,body,#body{
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 10%;
 }
 .buton-intampinare{
     width: 200px;
