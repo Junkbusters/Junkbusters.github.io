@@ -17,16 +17,18 @@ html,body,#body{
     padding: 0;
 
     color: var(--princiapl-inchis);
+    background-color: var(--princiapl-deschis);
 }
 #body{
     /* marime div */
     width: 100%;
-    min-width: 500px;
-    /* elementele cu positie absolut vor fi pozititionate in functie de divul asta */
+    min-width: 540px;
+    min-height: auto;
+
+    /* elementele cu pozitie absolut vor fi pozititionate in functie de divul asta */
     position: relative;
     display: grid;
 
-    background-color: var(--princiapl-deschis);
     position: relative;
 
 }   
@@ -65,8 +67,6 @@ html,body,#body{
 #bara-navigare :nth-child(n){
     /* viteza cu care se animeaza elementele din bara */
     transition: 1s;
-    /* seteaza spatii intre elementele din bara */
-    /* padding: 5px 20px 5px 20px; */
 }
 #bara-navigare:hover{
     /* arata bara cand ai mouse ul peste ea */
@@ -131,26 +131,25 @@ html,body,#body{
     text-align: center;
     overflow: hidden;
     min-width: 480px;
-    max-width: 1000PX;
     height: 500px;
     box-shadow:  0px 0px 10px 1px var(--princiapl-inchis);
     border-radius: 10px;
+
 }
 .slide-wrapper {
     width: 400%;
     height: 100%;
-    -webkit-animation: slide 18s ease infinite;
+    -webkit-animation: slide 15s ease infinite;
 
     display: grid;
     grid-auto-flow: column;
-
 }
 .slide {
     width: 100%;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    background-color: var(--accent-verde);
+    background-color: var(--princiapl-inchis);
 
 }
 
@@ -187,10 +186,18 @@ article{
     width: 60%;
     justify-self: center;
     min-width: 500px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 /* general */
 .pagina{
     padding-top: 5rem;
     box-sizing: border-box;
+}
+.font_bej{
+    color: var(--accent-bej);
+}
+.font_verde{
+    color: var(--accent-verde);
 }

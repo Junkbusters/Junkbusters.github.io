@@ -22,10 +22,18 @@
         <div id="pagina-intampinare" class="pagina">
             <div id="div-titlu-int" class="wrapper"><h1>junkbusters</h1></div>
             <div id="div-butoane-int" class="wrapper">
-                <button class="buton-intampinare">devino sponsor</button>
-                <button class="buton-intampinare">devino membru</button>
+                <button class="buton-intampinare" id="sponsor">devino sponsor</button>
+                <button class="buton-intampinare" id="membru">devino membru</button>
             </div>
         </div>
     </div>
 </body>
+    <script type="text/javascript">
+        document.getElementById("sponsor").onclick = function () {
+            location.href = "html/sponsor.html";
+        };
+        document.getElementById("membru").onclick = function () {
+            location.href = "html/membru.html";
+        };
+    </script>
 </html>
