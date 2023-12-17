@@ -21,28 +21,33 @@ html,body,#body{
 #body{
     /* marime div */
     width: 100%;
+    min-width: 800px;
     /* elementele cu positie absolut vor fi pozititionate in functie de divul asta */
     position: relative;
-    /* ascunde orice este mai mare decat divul asta pe axa x */
-    overflow-x: hidden;
+    display: grid;
 }
 /* Navigare */
 
 #bara-navigare{
+    backdrop-filter: blur(5px);
+
     /* pune bara de navigare in dreapta sus putin ascunsa */
     position: absolute;
     top: 0;
     right: 0;
-    transform: translateX( calc(100% - 1em - 40px));
+    transform: translateX( calc(100% - 1em - 10px));
     /* marime bara de navigare */
     width: fit-content;
     height: 2em;
-    /* marime font */
-    font-size: xx-large;
+    padding-right: 10px;
+    /* setari font */
+    color: var(--accent-portocaliu);
+    font-size: 1.4rem;
     /* felul in care afiseaza elementele din bara */
     display: grid;
     align-items: center;
     grid-auto-flow: column;
+    gap: 30px;
     /* viteza cu care se animeaza bara */
     transition: 1s;
 }
@@ -50,7 +55,7 @@ html,body,#body{
     /* viteza cu care se animeaza elementele din bara */
     transition: 1s;
     /* seteaza spatii intre elementele din bara */
-    padding: 5px 20px 5px 20px;
+    /* padding: 5px 20px 5px 20px; */
 }
 #bara-navigare:hover{
     /* arata bara cand ai mouse ul peste ea */
@@ -110,6 +115,48 @@ html,body,#body{
 }
 
 /* Pagina 404 */
+/* Pagina Acasa */
+#despre-jb{
+    padding-top: 10px;
+    width: 60%;
+    justify-self: center;
+}
+#acasa-slideshow {
+    text-align: center;
+    overflow: hidden;
+    min-width: 480px;
+    max-width: 1000PX;
+    height: 500px;
+    box-shadow:  0px 0px 10px 1px var(--princiapl-inchis);
+    border-radius: 10px;
+}
+.slide-wrapper {
+    width: 400%;
+    height: 100%;
+    -webkit-animation: slide 18s ease infinite;
+
+    display: grid;
+    grid-auto-flow: column;
+
+}
+.slide {
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--accent-verde);
+
+}
+
+@-webkit-keyframes slide {
+20% {margin-left: 0px;}
+30% {margin-left: -100%;}
+50% {margin-left: -100%;}
+60% {margin-left: -200%;}
+70% {margin-left: -200%;}
+80% {margin-left: -300%;}
+90% {margin-left: -300%;}
+}
 
 
 /* elemente predefinite */
@@ -124,6 +171,7 @@ button:hover{
 }
 a{
     text-decoration: none;
+    color: inherit;
 }
 a:hover{
     text-decoration: none;

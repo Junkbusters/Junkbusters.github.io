@@ -11,3 +11,6 @@ h1{
 *{
     font-family: verdana;
 }
+link{
+    color: var(--accent-verde);
+}
