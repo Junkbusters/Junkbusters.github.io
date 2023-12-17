@@ -21,11 +21,16 @@ html,body,#body{
 #body{
     /* marime div */
     width: 100%;
-    min-width: 800px;
+    min-width: 500px;
     /* elementele cu positie absolut vor fi pozititionate in functie de divul asta */
     position: relative;
     display: grid;
-}
+
+    overflow-x: hidden;
+    background-color: var(--princiapl-deschis);
+
+}   
+
 /* Navigare */
 
 #bara-navigare{
@@ -35,11 +40,12 @@ html,body,#body{
     position: absolute;
     top: 0;
     right: 0;
-    transform: translateX( calc(100% - 1em - 10px));
+    transform: translateX( calc(100% - 1em - 5px));
     /* marime bara de navigare */
     width: fit-content;
     height: 2em;
     padding-right: 10px;
+    padding-left: 5px;
     /* setari font */
     color: var(--accent-portocaliu);
     font-size: 1.4rem;
@@ -117,7 +123,7 @@ html,body,#body{
 /* Pagina 404 */
 /* Pagina Acasa */
 #despre-jb{
-    padding-top: 10px;
+    padding-top: 4em;
     width: 60%;
     justify-self: center;
 }
