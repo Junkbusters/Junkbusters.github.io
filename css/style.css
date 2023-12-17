@@ -26,20 +26,25 @@ html,body,#body{
     position: relative;
     display: grid;
 
-    overflow-x: hidden;
     background-color: var(--princiapl-deschis);
+    position: relative;
 
 }   
 
 /* Navigare */
-
+#bara-navigare-wrapper{
+    width: fit-content;
+    height: fit-content;
+    position: fixed;
+    top: 10px;
+    right: 0;
+    /* overflow-x: hidden; */
+}
 #bara-navigare{
     backdrop-filter: blur(5px);
 
     /* pune bara de navigare in dreapta sus putin ascunsa */
-    position: absolute;
-    top: 0;
-    right: 0;
+    /* position: absolute; */
     transform: translateX( calc(100% - 1em - 5px));
     /* marime bara de navigare */
     width: fit-content;
@@ -122,11 +127,6 @@ html,body,#body{
 
 /* Pagina 404 */
 /* Pagina Acasa */
-#despre-jb{
-    padding-top: 4em;
-    width: 60%;
-    justify-self: center;
-}
 #acasa-slideshow {
     text-align: center;
     overflow: hidden;
@@ -181,6 +181,12 @@ a{
 }
 a:hover{
     text-decoration: none;
+}
+article{
+    padding-top: 4em;
+    width: 60%;
+    justify-self: center;
+    min-width: 500px;
 }
 
 /* general */
