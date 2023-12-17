@@ -8,6 +8,7 @@
     --accent-verde: rgba(234,247,219,255);
 
     /* font */
+    font-size: large;
 }
 
 html,body,#body{
@@ -22,12 +23,13 @@ html,body,#body{
 #body{
     /* marime div */
     width: 100%;
-    min-width: 540px;
+    min-width: 740px;
     min-height: auto;
 
     /* elementele cu pozitie absolut vor fi pozititionate in functie de divul asta */
     position: relative;
     display: grid;
+    grid-auto-flow: column;
 
     position: relative;
 
@@ -54,7 +56,7 @@ html,body,#body{
     padding-right: 10px;
     padding-left: 5px;
     /* setari font */
-    color: var(--accent-portocaliu);
+    color: var(--princiapl-inchis   );
     font-size: 1.4rem;
     /* felul in care afiseaza elementele din bara */
     display: grid;
@@ -125,6 +127,29 @@ html,body,#body{
     font-size: 40px;
 }
 
+/* Pagina Sponsor */
+.poze_margine{
+    /* position: absolute; */
+    display: grid;
+    gap: 30px;
+}
+.stanga{
+    margin-left: 10px;
+    margin-top: 100px;
+}
+.dreapta{
+    margin-right: 10px;
+    margin-top: 100px;
+}
+.poza{
+    aspect-ratio: 1;
+    min-width: 100px;
+    max-width: 400px;
+    /* background-color: aquamarine; */
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
 /* Pagina 404 */
 /* Pagina Acasa */
 #acasa-slideshow {
@@ -151,6 +176,10 @@ html,body,#body{
     background-position: center;
     background-color: var(--princiapl-inchis);
 
+}
+#despre-jb{
+    text-align: center;
+    font-size: medium;
 }
 
 @-webkit-keyframes slide {
