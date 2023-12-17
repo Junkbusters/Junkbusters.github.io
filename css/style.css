@@ -32,8 +32,7 @@ html,body,#body{
     grid-auto-flow: column;
 
     position: relative;
-
-}   
+}  
 
 /* Navigare */
 #bara-navigare-wrapper{
@@ -162,7 +161,7 @@ html,body,#body{
 
 }
 .slide-wrapper {
-    width: 400%;
+    width: 600%;
     height: 100%;
     -webkit-animation: slide 15s ease infinite;
 
@@ -183,13 +182,16 @@ html,body,#body{
 }
 
 @-webkit-keyframes slide {
-20% {margin-left: 0px;}
+10% {margin-left: 0px;}
+20% {margin-left: -100%;}
 30% {margin-left: -100%;}
-50% {margin-left: -100%;}
-60% {margin-left: -200%;}
-70% {margin-left: -200%;}
-80% {margin-left: -300%;}
-90% {margin-left: -300%;}
+40% {margin-left: -200%;}
+50% {margin-left: -200%;}
+60% {margin-left: -300%;}
+70% {margin-left: -300%;}
+80% {margin-left: -400%;}
+90% {margin-left: -400%;}
+100% {margin-left: -500%;}
 }
 
 
@@ -229,4 +231,17 @@ article{
 }
 .font_verde{
     color: var(--accent-verde);
+}
+#logo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 125px;
+    aspect-ratio: 1;
+    /* backdrop-filter: blur(10px); */
+    background-image: url("../imagini/junk.png");
+    background-color: var();
+    background-position: center;
+    background-size: contain;
+
 }
