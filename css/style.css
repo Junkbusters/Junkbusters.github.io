@@ -93,9 +93,10 @@ html,body,#body{
     align-items: center;
     flex-direction: column;
     /* imagine de fundal setata sa incapa fix pe ecran */
-    background-image: url("../imagini/jbwallpaper4.jpg");
+    background-image: url("../imagini/jbwallpaper1.jpg");
     background-size: cover;
 }
+
 #div-titlu-int{
     /* marime div */
     width: 100%;
@@ -149,8 +150,7 @@ html,body,#body{
     background-size: contain;
     background-repeat: no-repeat;
 }
-/* Pagina 404 */
-/* Pagina Acasa */
+/* Pagina Despre */
 #acasa-slideshow {
     text-align: center;
     overflow: hidden;
